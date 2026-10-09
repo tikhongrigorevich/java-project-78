@@ -1,6 +1,7 @@
 # Валидатор данных (Java)
 
 [![hexlet-check](https://github.com/tikhongrigorevich/java-project-78/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/tikhongrigorevich/java-project-78/actions)
+[![build](https://github.com/tikhongrigorevich/java-project-78/actions/workflows/build.yml/badge.svg)](https://github.com/tikhongrigorevich/java-project-78/actions/workflows/build.yml)
 
 Создание собственной библиотеки для проверки корректности (валидации) данных – отличный способ прокачать навыки проектирования кода, в особенности, объектно-ориентированной архитектуры. Создание правильных иерархий классов, расширяемая архитектура, применение принципов SOLID, использование fluent-интерфейса – все это предстоит делать в проекте
 
