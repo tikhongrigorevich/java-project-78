@@ -2,6 +2,7 @@ package hexlet.code.schemas;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Predicate;
 
 public class NumberSchema implements BaseSchema<NumberSchema, Integer> {
@@ -9,7 +10,7 @@ public class NumberSchema implements BaseSchema<NumberSchema, Integer> {
 
     @Override
     public NumberSchema required() {
-        checks.put("required", value -> value != null);
+        checks.put("required", Objects::nonNull);
         return this;
     }
 

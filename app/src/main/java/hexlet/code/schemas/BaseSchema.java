@@ -2,7 +2,7 @@ package hexlet.code.schemas;
 
 public interface BaseSchema<T, V> {
 
-    public T required();
+    T required();
 
-    public boolean isValid(V param);
+    boolean isValid(V param);
 }
