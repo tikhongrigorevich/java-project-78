@@ -26,7 +26,7 @@ public class StringSchema implements BaseSchema<StringSchema, String> {
     @Override
     public boolean isValid(String str) {
         for (var check : checks.values()) {
-            if(!check.test(str)) {
+            if (!check.test(str)) {
                 return false;
             }
         }

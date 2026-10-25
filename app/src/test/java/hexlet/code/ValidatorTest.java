@@ -1,14 +1,13 @@
 package hexlet.code;
 
-import hexlet.code.schemas.MapSchema;
-import hexlet.code.schemas.StringSchema;
-import hexlet.code.schemas.NumberSchema;
-import org.junit.jupiter.api.Test;
-
-import java.util.HashMap;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import hexlet.code.schemas.MapSchema;
+import hexlet.code.schemas.NumberSchema;
+import hexlet.code.schemas.StringSchema;
+import java.util.HashMap;
+import org.junit.jupiter.api.Test;
 
 class ValidatorTest {
     @Test
