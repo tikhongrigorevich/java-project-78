@@ -4,9 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Predicate;
 
-public class StringSchema {
+public class StringSchema implements BaseSchema<StringSchema, String> {
     private final Map<String, Predicate<String>> checks = new HashMap<>();
 
+    @Override
     public StringSchema required() {
         checks.put("required", value -> value != null && !value.isEmpty());
         return this;
@@ -22,6 +23,7 @@ public class StringSchema {
         return this;
     }
 
+    @Override
     public boolean isValid(String str) {
         for (var check : checks.values()) {
             if(!check.test(str)) {
